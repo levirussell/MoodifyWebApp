@@ -1,9 +1,10 @@
-# Getting Started with Create React App
+# Moodify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Moodify.Party](https://Moodify.party)
 
-## Available Scripts
+## Home
 
+![Moodify Home](etc/home.png)
 In the project directory, you can run:
 
 ### `npm start`
