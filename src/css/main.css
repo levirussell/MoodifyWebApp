@@ -1,0 +1,205 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+.App-header {
+    background-color: #282c34;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    
+}
+
+.App-logo {
+    height: 75%;
+    padding-right: 1rem;
+}
+
+.header-text-main{
+    position: relative;
+    font-family: "Helvetica";
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+}
+
+.header-logout-btn{
+    margin: 0;
+    padding-right: 1rem;
+    position: absolute;
+    right: 0;
+    height: 6vh;
+}
+
+.header-btns{
+    width: max-content;
+    position: fixed;
+    height: 6vh;
+    right: 0;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-btn{
+    padding-left: 1rem;
+}
+
+.main-container {
+    width: 80rem;
+    max-width: 100%;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+.main-body {
+    height: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.spofity-login-center {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+.App-logo {
+    animation: App-logo-spin infinite 1s linear;
+}
+} */
+
+/* SONG LIST TABLE */
+
+.main-table{
+    min-height: 4rem;
+    height: fit-content;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    scroll-behavior: smooth;
+    margin: 1rem 4rem 0 4rem;
+}
+
+
+
+.hover-dim2:nth-child(even) {
+    background: linear-gradient(45deg, #549fe199 10%, #e389b899 90%);
+}
+.hover-dim2:nth-child(odd) {
+background: linear-gradient(45deg, #e389b899 40%, #549fe199 95%);
+}
+.hover-dim2:hover {
+background: linear-gradient(135deg, #933968 40%, #246fa1 95%);
+}
+.hover-dim2:active {
+background: linear-gradient(135deg, #e389b8 40%, #74bff1 95%);
+}
+.hover-dim2solid {
+background: linear-gradient(135deg, #933968 40%, #246fa1 95%);
+}
+
+.table-row{
+    min-height: 4rem;
+    height: 4rem;
+    max-height: 4rem;
+    overflow: hidden;
+}
+
+.maintabletext{
+    height: 100%;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.maintabletrackname{
+    font-size: 1rem;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.maintableartistname{
+    font-size: 0.9rem;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.maintabletext a:link{
+    color: black;
+    text-decoration: underline;
+}
+
+.maintabletext a:visited{
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+.maintableplayicon{
+    width: 6rem;
+    background-color: blue;
+}
+
+.userinput-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.export-playlist-btn{
+    margin: 0;
+    padding-left: 1rem;
+    height: 3rem;
+    width: 10rem;
+}
+
+.mainarea{
+    min-height: 30vh;
+    height: 86vh;
+    max-height: max-content;
+    background-color: #282c3455;
+    flex-direction: row;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.footer-start-btn{
+    padding-left: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main-container{
+        width: auto;
+    }
+    .main-table{
+        max-height: 60%;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .userinput-header{
+        justify-content: left;
+        flex-direction: column;
+    }
+}

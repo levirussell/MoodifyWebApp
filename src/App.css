@@ -1,0 +1,279 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+    font-size: 14pt;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #81d3f6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc91c5, #81d3f6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc91c5, #81d3f6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*#800000,#800080*/
+}
+
+/* For ParticlesBG div */
+.transparent{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=33)";       /* IE 8 */
+  filter: alpha(opacity=3);  /* IE 5-7 */
+  -moz-opacity: 0.03;          /* Netscape */
+  -khtml-opacity: 0.03;        /* Safari 1.x */
+  opacity: 0.03;               /* Good browsers */
+  position:absolute;
+  
+  height:100%;
+  width:100%;
+  z-index: -1;
+  
+  }
+
+
+
+.App {
+  text-align: center;
+}
+
+
+
+
+
+.App-secondary-header{
+  background: linear-gradient(135deg, #933968 40%, #246fa1 95%);
+  min-height: 8vh;
+  height: 8vh;
+  max-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 8vh;
+  height: 8vh;
+  max-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.thumbnail{
+  padding: 0;
+  max-height: 6vh; 
+}
+
+/* .button:hover,
+button:hover,
+input[type="button"]:hover {
+   background: #3d3145;
+   color: #fff;
+}
+
+.button:active,
+button:active,
+input[type="button"]:active {
+   background: #5d8185;
+   color: #fff;
+} */
+
+.hover-dim:hover {
+   background: #3d3145;
+   color: #fff;
+}
+.hover-dim:active {
+  background: #5d8185;
+  color: #fff;
+}
+
+
+.table-cell-text{
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+#style-2::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #22222200;
+}
+
+#style-2::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: rgba(0,0,0,.3);
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 4px rgba(221,221,221,1.0);
+  background-color: rgba(0,0,0,.0);
+}
+
+
+.player-progress {
+  width: 100%;
+  padding: 0;
+}
+
+.player-height {
+  min-height: 8vh;
+  height: 8vh;
+  max-height: 8vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.volume-area {
+  height: 8vh;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.player-info {
+  height: 8vh;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+
+.artist {
+  height: 4vh;
+  width: 100%;
+  overflow-y: clip;
+  overflow-x: hidden;
+  font-size: calc(2px + 1.5vmin);
+}
+
+.songtitle {
+  height: 4vh;
+  width: 100%;
+  overflow-y: clip;
+  overflow-x: hidden;
+  font-size: calc(4px + 1.5vmin);
+}
+
+.player-image {
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+}
+
+.player-song-info {
+  height: 8vh;
+  width: 100%;
+}
+
+.player-volume {
+  height: 8vh;
+  width: 30%;
+  float: right;
+}
+
+/* Start of player css */
+.main_player_top{
+  height: 8vh;
+  width: 40%;
+  align-self: center;
+}
+
+.player-info2 {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress_div{
+  height: 100%;
+  width: 100%;
+}
+
+.bottom_div{
+  height: 40%;
+  display: flex;
+}
+
+.play_pause_div{
+  height: 60%;
+}
+
+.prev_div {
+
+}
+
+.next_div {
+  
+}
+
+.song_time_div{
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 1.25vmin);
+  color: #ccc;
+}
+
+
+#style-3::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #22222200;
+}
+
+#style-3::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: rgba(0,0,0,.3);
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 4px rgba(221,221,221,1.0);
+  background-color: rgba(0,0,0,.0);
+}
